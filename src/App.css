@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body {
+  padding: 2%;
+  margin: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Card {
+  background-color: rgb(148, 125, 211);
+  margin: 5%;
+  width: 15%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.UnoCard {
+  background-color: rgb(148, 125, 211);
+  width: 60vw;
+  height: 60vh;
+  border-radius: 20%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.UnoCard > p {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.JednaKartica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
